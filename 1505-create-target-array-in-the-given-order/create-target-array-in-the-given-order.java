@@ -1,14 +1,15 @@
 import java.util.ArrayList;
 class Solution {
     public int[] createTargetArray(int[] nums, int[] index) {
-        ArrayList<Integer> res = new ArrayList<>();
+        ArrayList<Integer> ans = new ArrayList<>();
         for(int i=0;i<nums.length;i++){
-            res.add(index[i],nums[i]);
+            ans.add(index[i],nums[i]);
         }
-        int[] target = new int[nums.length];
+        int[] res = new int[nums.length];
         for(int i=0;i<nums.length;i++){
-            target[i]=res.get(i);
+            res[i]=ans.get(i);
         }
-        return target;
+        return res;
+         
 }
 }
