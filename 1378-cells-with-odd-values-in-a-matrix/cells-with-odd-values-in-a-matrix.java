@@ -12,15 +12,13 @@ class Solution {
                 matrix[j][col]++;
             }
         }
-         for(int i=0;i<m;i++){
-            for(int j=0;j<n;j++){
+        for(int i=0;i<matrix.length;i++){
+            for(int j=0;j<matrix[i].length;j++){
                 if(matrix[i][j]%2!=0){
-                     count+=1;
-        }
+                    count+=1;
+                }
             }
-         }
-         
-        
-        return count;
+        }
+return count;
     }
 }
