@@ -1,15 +1,15 @@
 class Solution {
     public boolean checkIfPangram(String sentence) {
         boolean[] alphabet = new boolean[26];
-        for(int i=0;i<sentence.length();i++){
+        for (int i=0;i<sentence.length();i++){
             char ch = sentence.charAt(i);
             alphabet[ch-'a']=true;
         }
-        for(int i=0;i<26;i++){
+        for(int i=0;i<alphabet.length;i++){
             if(!alphabet[i]){
                 return false;
             }
         }
-        return true;
+         return true;
     }
 }
