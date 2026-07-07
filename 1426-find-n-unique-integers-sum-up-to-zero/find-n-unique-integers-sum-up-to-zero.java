@@ -7,12 +7,11 @@ class Solution {
         for(int i=1;i<=n/2;i++){
             ans.add(-i);
             ans.add(i);
-             
         }
-        int[] res = new int[n];
+        int[] res = new int[ans.size()];
         for(int i=0;i<ans.size();i++){
             res[i] = ans.get(i);
         }
-return res;
+         return res;
     }
 }
