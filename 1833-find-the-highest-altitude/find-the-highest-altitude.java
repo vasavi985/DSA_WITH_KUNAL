@@ -7,9 +7,10 @@ class Solution {
             if(altitude>max){
                 max=altitude;
             }
-        }
-return max;
         
+        }
+         
+        return max;
            
     }
 }
