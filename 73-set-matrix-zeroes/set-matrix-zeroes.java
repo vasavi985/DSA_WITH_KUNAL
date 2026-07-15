@@ -1,0 +1,30 @@
+class Solution {
+    public void setZeroes(int[][] matrix) {
+        int row=matrix.length;
+        int col=matrix[0].length;
+        int[][] ans=new int[row][col];
+        for(int i=0;i<row;i++){
+            for(int j=0;j<col;j++){
+                ans[i][j]=matrix[i][j];
+            }
+        }
+         for(int i=0;i<row;i++){
+            for(int j=0;j<col;j++){
+                if(matrix[i][j]==0){
+                    for(int c=0;c<col;c++){
+                        ans[i][c]=0;
+                    }
+                    for(int k=0;k<row;k++){
+                        ans[k][j]=0;
+                    }
+                }
+
+            }
+         }   
+         for(int i=0;i<ans.length;i++){
+            for(int j=0;j<ans[0].length;j++){
+                matrix[i][j] =ans[i][j];
+            }
+         }
+          }
+}
