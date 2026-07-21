@@ -9,10 +9,11 @@ class Solution {
             if(moves>max_reach){
                 max_reach=moves;
             }
-            if(max_reach>nums.length-1){
+            
+        }
+ if(max_reach>=nums.length-1){
                 return true;
             }
-        }
-         return true;
+            return false;
     }
 }
