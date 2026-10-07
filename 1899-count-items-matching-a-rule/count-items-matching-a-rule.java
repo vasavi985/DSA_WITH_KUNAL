@@ -4,13 +4,13 @@ class Solution {
         if(ruleKey.equals("type")){
             column=0;
         }
-        if(ruleKey.equals("color")){
+        else if(ruleKey.equals("color")){
             column=1;
         }
-        if(ruleKey.equals("name")){
+        else if(ruleKey.equals("name")){
             column=2;
         }
-        int count=0;
+        int count =0;
         for(int i=0;i<items.size();i++){
             if(items.get(i).get(column).equals(ruleValue)){
                 count+=1;
